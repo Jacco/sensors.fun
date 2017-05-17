@@ -1,13 +1,34 @@
 var express = require("express");
 var app = express();
+var path = require('path');
+
 var cfenv = require("cfenv");
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
+var exphbs  = require('express-handlebars');
+
+
+// Use handelbars for view
+app.set('views', path.join(__dirname, 'views'));
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
+/* Routing */
+var index = require('./routes/index');
+// var users = require('./routes/users');
+ var toon = require('./routes/toon');
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', index);
+// app.use('/users', users);
+ app.use('/toon', toon);
+
 
 var mydb;
 
@@ -54,11 +75,12 @@ app.get("/api/visitors", function (request, response) {
   mydb.list({ include_docs: true }, function(err, body) {
     if (!err) {
       body.rows.forEach(function(row) {
-        if(row.doc.name)
-          names.push(row.doc.name);
+        console.log(row.doc.payload);
+        if(row.doc.payload)
+          names.push(row.doc.payload);
       });
       response.json(names);
-    }
+    } 
   });
 });
 
@@ -82,7 +104,7 @@ if (appEnv.services['cloudantNoSQLDB']) {
   var cloudant = Cloudant(appEnv.services['cloudantNoSQLDB'][0].credentials);
 
   //database name
-  var dbName = 'mydb';
+  var dbName = 'ttndatadummy';
 
   // Create a new "mydb" database.
   cloudant.db.create(dbName, function(err, data) {
@@ -103,3 +125,6 @@ var port = process.env.PORT || 3000
 app.listen(port, function() {
     console.log("To view your app, open this link in your browser: http://localhost:" + port);
 });
+
+module.exports = app;
+
