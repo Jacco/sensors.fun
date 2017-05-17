@@ -20,6 +20,7 @@
     "cloudant": "^1.7.1",
     "dotenv": "^4.0.0",
     "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
     "nodemon": "^1.11.0"
   },
   "author": "IBM Corp",
