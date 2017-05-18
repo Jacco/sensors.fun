@@ -18,6 +18,7 @@ var ttn = require('./routes/ttn');
 
 // var users = require('./routes/users');
 var toon = require('./routes/toon');
+var sensors = require('./routes/sensors');
 var sensor1 = require('./routes/sensor1');
 var sensor2 = require('./routes/sensor2');
 
@@ -35,6 +36,7 @@ app.use('/ttn', ttn);
 app.use('/toon', toon);
 app.use('/sensor1', sensor1);
 app.use('/sensor2', sensor2);
+app.use('/sensors', sensors);
 
 var mydb;
 var mydb2;
