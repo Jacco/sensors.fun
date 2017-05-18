@@ -1,34 +1,54 @@
-<div class="container">
-	<div class="col-md-12">
-		<div class="row">
-			<div class="col-md-9" style="position: relative">
-				<img src="img/sensors.jpeg" style="width: 100%" />
-				<img src="img/logo-ttn.svg" width="200px" height="200px" style="position: absolute; bottom: 20px; left: 20px; background-color: white;" />
-			</div>
-			<div class="col-md-3">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4870.233331446203!2d4.86817028624305!3d52.38643536045758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2snl!4v1495095727858" width="400" height="300" frameborder="0" style="border:0; width: 100%" allowfullscreen></iframe>
-			</div>
-		</div>
-		<div class="row">
-			<input type="text" value="http://sensors.fun/sensor2/data"  style="width: 100%" />
-		</div>
-		<div class="row">
-			<div id="databaseNames">
-				<pre>
+<div class="container topSpacing">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-9" style="    position: relative;
+    height: 450px;
+    overflow: hidden; position: relative">
+        <img src="img/sensors.jpeg" style="width: 100%"/>
+        <img src="img/logo-ttn.svg" width="200px" height="200px"
+             style="position: absolute; bottom: 20px; left: 40px; background-color: white;"/>
+      </div>
+      <div class="col-md-3">
+        <h3>Sensor info</h3>
+        <div>Sensor author: Anonymous</div>
+        <div>Sensor readings: 759</div>
+        <div>Sensor added: 2017/05/16</div>
+        <br>
+        <br>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4870.233331446203!2d4.86817028624305!3d52.38643536045758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2snl!4v1495095727858"
+                width="400" height="300" frameborder="0" style="border:0; width: 100%" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="sensor-description">
+      Sensor located in Amsterdam, Wester Park. Indoors, temeperature, sound and light readings
+    </div>
+      <div class="sensor-api">
+        <div class="api-label">
+          API Endpoint
+        </div>
+        <input type="text" value="http://sensors.fun/sensor2/data" style="width: 80%; float:left;"/>
+        <button class="api-copy btn btn-default">COPY</button>
+      </div>
+
+
+
+      <div id="databaseNames">
+        <h3>Data output</h3>
+        <pre>
 
 				</pre>
-			</div>
-		</div>
-	</div>
+      </div>
+  </div>
 </div>
 
 
 <script>
   //Retreive all the visitors from the database
-  function getNames(){
+  function getNames() {
     $.get("./api/visitors")
-        .done(function(data) {
-          if(data.length > 0) {
+        .done(function (data) {
+          if (data.length > 0) {
             var jsonPretty = JSON.stringify(data, null, '\t');
 
             $('#databaseNames pre').html(jsonPretty);
@@ -37,7 +57,7 @@
   }
 
   //Call getNames on page load.
-  $(document).ready(function() {
+  $(document).ready(function () {
     getNames();
 
   });
