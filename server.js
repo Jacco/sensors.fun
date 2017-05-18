@@ -91,6 +91,23 @@ app.get("/api/visitors", function (request, response) {
   });
 });
 
+app.get("/api/sensor1/data", function (request, response) {
+  var names = [];
+  if (!mydb2) {
+    response.json(names);
+    return;
+  }
+
+  mydb2.list({include_docs: true}, function (err, body) {
+    if (!err) {
+      body.rows.forEach(function (row) {
+        if (row)
+          names.push(row.doc);
+      });
+      response.json(names);
+    }
+  });
+});
 
 // load local VCAP configuration  and service credentials
 var vcapLocal;
@@ -114,7 +131,7 @@ if (appEnv.services['cloudantNoSQLDB']) {
   //database name
   var dbName = 'ttndatadummy';
 
-  var dbName2 = 'another_table';
+  var dbName2 = 'toondata';
 
   // Create a new "mydb" database.
   cloudant.db.create(dbName, function (err, data) {
