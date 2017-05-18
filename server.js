@@ -37,6 +37,7 @@ app.use('/sensor1', sensor1);
 app.use('/sensor2', sensor2);
 
 var mydb;
+var mydb2;
 
 /* Endpoint to greet and add a new visitor to database.
  * Send a POST request to localhost:3000/api/visitors with body
@@ -113,6 +114,8 @@ if (appEnv.services['cloudantNoSQLDB']) {
   //database name
   var dbName = 'ttndatadummy';
 
+  var dbName2 = 'another_table';
+
   // Create a new "mydb" database.
   cloudant.db.create(dbName, function (err, data) {
     if (!err) //err if database doesn't already exists
@@ -121,6 +124,9 @@ if (appEnv.services['cloudantNoSQLDB']) {
 
   // Specify the database we are going to use (mydb)...
   mydb = cloudant.db.use(dbName);
+
+  mydb2 = cloudant.db.use(dbName2);
+
 }
 
 //serve static file (index.html, images, css)
