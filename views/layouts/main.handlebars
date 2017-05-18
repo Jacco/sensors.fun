@@ -1,72 +1,1979 @@
-<html>
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://demos.artbees.net/jupiter5/tempestas/ -->
+<html lang="en-US"
+      class="Chrome Chrome58 cssanimations csstransitions no-touchevents js_active  vc_desktop  vc_transform  vc_transform">
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress
+    theme</title>
+  <script type="text/javascript" async=""
+          src="./Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress theme_files/saved_resource"></script>
+  <style id="critical-path-css" type="text/css">/* non cached */
+  body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0
+  }
+
+  .page-preloader {
+    top: 0;
+    left: 0;
+    z-index: 999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    text-align: center
+  }
+
+  .preloader-logo, .preloader-preview-area {
+    top: 50%;
+    max-height: calc(50% - 20px);
+    opacity: 1
+  }
+
+  .preloader-preview-area {
+    -webkit-animation-delay: -.2s;
+    animation-delay: -.2s;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    position: absolute
+  }
+
+  .preloader-logo {
+    max-width: 90%;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    margin: -10px auto 0;
+    position: relative
+  }
+
+  .ball-pulse > div, .ball-scale > div, .line-scale > div {
+    margin: 2px;
+    display: inline-block
+  }
+
+  .ball-pulse > div {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: ball-pulse .75s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: ball-pulse .75s infinite cubic-bezier(.2, .68, .18, 1.08)
+  }
+
+  .ball-pulse > div:nth-child(1) {
+    -webkit-animation-delay: -.36s;
+    animation-delay: -.36s
+  }
+
+  .ball-pulse > div:nth-child(2) {
+    -webkit-animation-delay: -.24s;
+    animation-delay: -.24s
+  }
+
+  .ball-pulse > div:nth-child(3) {
+    -webkit-animation-delay: -.12s;
+    animation-delay: -.12s
+  }
+
+  @-webkit-keyframes ball-pulse {
+    0%, 80% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1
+    }
+    45% {
+      -webkit-transform: scale(.1);
+      transform: scale(.1);
+      opacity: .7
+    }
+  }
+
+  @keyframes ball-pulse {
+    0%, 80% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1
+    }
+    45% {
+      -webkit-transform: scale(.1);
+      transform: scale(.1);
+      opacity: .7
+    }
+  }
+
+  .ball-clip-rotate-pulse {
+    position: relative;
+    -webkit-transform: translateY(-15px) translateX(-10px);
+    -ms-transform: translateY(-15px) translateX(-10px);
+    transform: translateY(-15px) translateX(-10px);
+    display: inline-block
+  }
+
+  .ball-clip-rotate-pulse > div {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%
+  }
+
+  .ball-clip-rotate-pulse > div:first-child {
+    height: 36px;
+    width: 36px;
+    top: 7px;
+    left: -7px;
+    -webkit-animation: ball-clip-rotate-pulse-scale 1s 0s cubic-bezier(.09, .57, .49, .9) infinite;
+    animation: ball-clip-rotate-pulse-scale 1s 0s cubic-bezier(.09, .57, .49, .9) infinite
+  }
+
+  .ball-clip-rotate-pulse > div:last-child {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -16px;
+    top: -2px;
+    background: 0 0;
+    border: 2px solid;
+    -webkit-animation: ball-clip-rotate-pulse-rotate 1s 0s cubic-bezier(.09, .57, .49, .9) infinite;
+    animation: ball-clip-rotate-pulse-rotate 1s 0s cubic-bezier(.09, .57, .49, .9) infinite;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s
+  }
+
+  @-webkit-keyframes ball-clip-rotate-pulse-rotate {
+    0% {
+      -webkit-transform: rotate(0) scale(1);
+      transform: rotate(0) scale(1)
+    }
+    50% {
+      -webkit-transform: rotate(180deg) scale(.6);
+      transform: rotate(180deg) scale(.6)
+    }
+    100% {
+      -webkit-transform: rotate(360deg) scale(1);
+      transform: rotate(360deg) scale(1)
+    }
+  }
+
+  @keyframes ball-clip-rotate-pulse-rotate {
+    0% {
+      -webkit-transform: rotate(0) scale(1);
+      transform: rotate(0) scale(1)
+    }
+    50% {
+      -webkit-transform: rotate(180deg) scale(.6);
+      transform: rotate(180deg) scale(.6)
+    }
+    100% {
+      -webkit-transform: rotate(360deg) scale(1);
+      transform: rotate(360deg) scale(1)
+    }
+  }
+
+  @-webkit-keyframes ball-clip-rotate-pulse-scale {
+    30% {
+      -webkit-transform: scale(.3);
+      transform: scale(.3)
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1)
+    }
+  }
+
+  @keyframes ball-clip-rotate-pulse-scale {
+    30% {
+      -webkit-transform: scale(.3);
+      transform: scale(.3)
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1)
+    }
+  }
+
+  @-webkit-keyframes square-spin {
+    25% {
+      -webkit-transform: perspective(100px) rotateX(180deg) rotateY(0);
+      transform: perspective(100px) rotateX(180deg) rotateY(0)
+    }
+    50% {
+      -webkit-transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+      transform: perspective(100px) rotateX(180deg) rotateY(180deg)
+    }
+    75% {
+      -webkit-transform: perspective(100px) rotateX(0) rotateY(180deg);
+      transform: perspective(100px) rotateX(0) rotateY(180deg)
+    }
+    100% {
+      -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
+      transform: perspective(100px) rotateX(0) rotateY(0)
+    }
+  }
+
+  @keyframes square-spin {
+    25% {
+      -webkit-transform: perspective(100px) rotateX(180deg) rotateY(0);
+      transform: perspective(100px) rotateX(180deg) rotateY(0)
+    }
+    50% {
+      -webkit-transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+      transform: perspective(100px) rotateX(180deg) rotateY(180deg)
+    }
+    75% {
+      -webkit-transform: perspective(100px) rotateX(0) rotateY(180deg);
+      transform: perspective(100px) rotateX(0) rotateY(180deg)
+    }
+    100% {
+      -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
+      transform: perspective(100px) rotateX(0) rotateY(0)
+    }
+  }
+
+  .square-spin {
+    display: inline-block
+  }
+
+  .square-spin > div {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: square-spin 3s 0s cubic-bezier(.09, .57, .49, .9) infinite;
+    animation: square-spin 3s 0s cubic-bezier(.09, .57, .49, .9) infinite
+  }
+
+  .cube-transition {
+    position: relative;
+    -webkit-transform: translate(-25px, -25px);
+    -ms-transform: translate(-25px, -25px);
+    transform: translate(-25px, -25px);
+    display: inline-block
+  }
+
+  .cube-transition > div {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    -webkit-animation: cube-transition 1.6s 0s infinite ease-in-out;
+    animation: cube-transition 1.6s 0s infinite ease-in-out
+  }
+
+  .cube-transition > div:last-child {
+    -webkit-animation-delay: -.8s;
+    animation-delay: -.8s
+  }
+
+  @-webkit-keyframes cube-transition {
+    25% {
+      -webkit-transform: translateX(50px) scale(.5) rotate(-90deg);
+      transform: translateX(50px) scale(.5) rotate(-90deg)
+    }
+    50% {
+      -webkit-transform: translate(50px, 50px) rotate(-180deg);
+      transform: translate(50px, 50px) rotate(-180deg)
+    }
+    75% {
+      -webkit-transform: translateY(50px) scale(.5) rotate(-270deg);
+      transform: translateY(50px) scale(.5) rotate(-270deg)
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg)
+    }
+  }
+
+  @keyframes cube-transition {
+    25% {
+      -webkit-transform: translateX(50px) scale(.5) rotate(-90deg);
+      transform: translateX(50px) scale(.5) rotate(-90deg)
+    }
+    50% {
+      -webkit-transform: translate(50px, 50px) rotate(-180deg);
+      transform: translate(50px, 50px) rotate(-180deg)
+    }
+    75% {
+      -webkit-transform: translateY(50px) scale(.5) rotate(-270deg);
+      transform: translateY(50px) scale(.5) rotate(-270deg)
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg)
+    }
+  }
+
+  .ball-scale > div {
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    height: 60px;
+    width: 60px;
+    -webkit-animation: ball-scale 1s 0s ease-in-out infinite;
+    animation: ball-scale 1s 0s ease-in-out infinite
+  }
+
+  .ball-scale-multiple > div, .line-scale > div {
+    -webkit-animation-fill-mode: both;
+    height: 50px
+  }
+
+  @-webkit-keyframes ball-scale {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0)
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0
+    }
+  }
+
+  @keyframes ball-scale {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0)
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0
+    }
+  }
+
+  .line-scale > div {
+    animation-fill-mode: both;
+    width: 5px;
+    border-radius: 2px
+  }
+
+  .line-scale > div:nth-child(1) {
+    -webkit-animation: line-scale 1s -.5s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: line-scale 1s -.5s infinite cubic-bezier(.2, .68, .18, 1.08)
+  }
+
+  .line-scale > div:nth-child(2) {
+    -webkit-animation: line-scale 1s -.4s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: line-scale 1s -.4s infinite cubic-bezier(.2, .68, .18, 1.08)
+  }
+
+  .line-scale > div:nth-child(3) {
+    -webkit-animation: line-scale 1s -.3s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: line-scale 1s -.3s infinite cubic-bezier(.2, .68, .18, 1.08)
+  }
+
+  .line-scale > div:nth-child(4) {
+    -webkit-animation: line-scale 1s -.2s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: line-scale 1s -.2s infinite cubic-bezier(.2, .68, .18, 1.08)
+  }
+
+  .line-scale > div:nth-child(5) {
+    -webkit-animation: line-scale 1s -.1s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: line-scale 1s -.1s infinite cubic-bezier(.2, .68, .18, 1.08)
+  }
+
+  @-webkit-keyframes line-scale {
+    0%, 100% {
+      -webkit-transform: scaley(1);
+      transform: scaley(1)
+    }
+    50% {
+      -webkit-transform: scaley(.4);
+      transform: scaley(.4)
+    }
+  }
+
+  @keyframes line-scale {
+    0%, 100% {
+      -webkit-transform: scaley(1);
+      transform: scaley(1)
+    }
+    50% {
+      -webkit-transform: scaley(.4);
+      transform: scaley(.4)
+    }
+  }
+
+  .ball-scale-multiple {
+    position: relative;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+    display: inline-block
+  }
+
+  .ball-scale-multiple > div {
+    border-radius: 100%;
+    animation-fill-mode: both;
+    margin: 0;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    opacity: 0;
+    width: 50px;
+    -webkit-animation: ball-scale-multiple 1s 0s linear infinite;
+    animation: ball-scale-multiple 1s 0s linear infinite
+  }
+
+  .ball-scale-multiple > div:nth-child(2), .ball-scale-multiple > div:nth-child(3) {
+    -webkit-animation-delay: -.2s;
+    animation-delay: -.2s
+  }
+
+  @-webkit-keyframes ball-scale-multiple {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 0
+    }
+    5% {
+      opacity: 1
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0
+    }
+  }
+
+  @keyframes ball-scale-multiple {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 0
+    }
+    5% {
+      opacity: 1
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0
+    }
+  }
+
+  .ball-pulse-sync {
+    display: inline-block
+  }
+
+  .ball-pulse-sync > div {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 2px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    display: inline-block
+  }
+
+  .ball-pulse-sync > div:nth-child(1) {
+    -webkit-animation: ball-pulse-sync .6s -.21s infinite ease-in-out;
+    animation: ball-pulse-sync .6s -.21s infinite ease-in-out
+  }
+
+  .ball-pulse-sync > div:nth-child(2) {
+    -webkit-animation: ball-pulse-sync .6s -.14s infinite ease-in-out;
+    animation: ball-pulse-sync .6s -.14s infinite ease-in-out
+  }
+
+  .ball-pulse-sync > div:nth-child(3) {
+    -webkit-animation: ball-pulse-sync .6s -70ms infinite ease-in-out;
+    animation: ball-pulse-sync .6s -70ms infinite ease-in-out
+  }
+
+  @-webkit-keyframes ball-pulse-sync {
+    33% {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px)
+    }
+    66% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px)
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+    }
+  }
+
+  @keyframes ball-pulse-sync {
+    33% {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px)
+    }
+    66% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px)
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+    }
+  }
+
+  .transparent-circle {
+    display: inline-block;
+    border-top: .5em solid rgba(255, 255, 255, .2);
+    border-right: .5em solid rgba(255, 255, 255, .2);
+    border-bottom: .5em solid rgba(255, 255, 255, .2);
+    border-left: .5em solid #fff;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: transparent-circle 1.1s infinite linear;
+    animation: transparent-circle 1.1s infinite linear;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%
+  }
+
+  .transparent-circle:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em
+  }
+
+  @-webkit-keyframes transparent-circle {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0)
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg)
+    }
+  }
+
+  @keyframes transparent-circle {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0)
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg)
+    }
+  }
+
+  .ball-spin-fade-loader {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    display: inline-block
+  }
+
+  .ball-spin-fade-loader > div {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 2px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: absolute;
+    -webkit-animation: ball-spin-fade-loader 1s infinite linear;
+    animation: ball-spin-fade-loader 1s infinite linear
+  }
+
+  .ball-spin-fade-loader > div:nth-child(1) {
+    top: 25px;
+    left: 0;
+    animation-delay: -.84s;
+    -webkit-animation-delay: -.84s
+  }
+
+  .ball-spin-fade-loader > div:nth-child(2) {
+    top: 17.05px;
+    left: 17.05px;
+    animation-delay: -.72s;
+    -webkit-animation-delay: -.72s
+  }
+
+  .ball-spin-fade-loader > div:nth-child(3) {
+    top: 0;
+    left: 25px;
+    animation-delay: -.6s;
+    -webkit-animation-delay: -.6s
+  }
+
+  .ball-spin-fade-loader > div:nth-child(4) {
+    top: -17.05px;
+    left: 17.05px;
+    animation-delay: -.48s;
+    -webkit-animation-delay: -.48s
+  }
+
+  .ball-spin-fade-loader > div:nth-child(5) {
+    top: -25px;
+    left: 0;
+    animation-delay: -.36s;
+    -webkit-animation-delay: -.36s
+  }
+
+  .ball-spin-fade-loader > div:nth-child(6) {
+    top: -17.05px;
+    left: -17.05px;
+    animation-delay: -.24s;
+    -webkit-animation-delay: -.24s
+  }
+
+  .ball-spin-fade-loader > div:nth-child(7) {
+    top: 0;
+    left: -25px;
+    animation-delay: -.12s;
+    -webkit-animation-delay: -.12s
+  }
+
+  .ball-spin-fade-loader > div:nth-child(8) {
+    top: 17.05px;
+    left: -17.05px;
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s
+  }
+
+  @-webkit-keyframes ball-spin-fade-loader {
+    50% {
+      opacity: .3;
+      -webkit-transform: scale(.4);
+      transform: scale(.4)
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1)
+    }
+  }
+
+  @keyframes ball-spin-fade-loader {
+    50% {
+      opacity: .3;
+      -webkit-transform: scale(.4);
+      transform: scale(.4)
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1)
+    }
+  }</style>
+  <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+  <link rel="dns-prefetch" href="http://s.w.org/">
+  <link rel="alternate" type="application/rss+xml" title="Tempestas Template - Jupiter WordPress Theme » Feed"
+        href="http://demos.artbees.net/jupiter5/tempestas/feed/">
+  <link rel="alternate" type="application/rss+xml" title="Tempestas Template - Jupiter WordPress Theme » Comments Feed"
+        href="http://demos.artbees.net/jupiter5/tempestas/comments/feed/">
+
+  <link rel="shortcut icon"
+        href="http://demos.artbees.net/jupiter5/tempestas/wp-content/uploads/sites/101/2016/04/favicon.png">
+  <link rel="stylesheet" id="theme-styles-css"
+        href="./Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress theme_files/core-styles.css"
+        type="text/css" media="all">
+  <link rel="stylesheet" id="google-font-api-special-1-css"
+        href="./Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress theme_files/css"
+        type="text/css" media="all">
+  <link rel="stylesheet" id="js_composer_front-css"
+        href="./Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress theme_files/js_composer.min.css"
+        type="text/css" media="all">
+  <link rel="stylesheet" id="global-assets-css-css"
+        href="./Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress theme_files/components-full.css"
+        type="text/css" media="all">
+  <link rel="stylesheet" id="theme-options-css"
+        href="./Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress theme_files/theme-options-production.css"
+        type="text/css" media="all">
+  <link rel="stylesheet" id="mk-style-css"
+        href="./Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress theme_files/style.css"
+        type="text/css" media="all">
+  <link rel="stylesheet" id="theme-dynamic-styles-css"
+        href="./Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress theme_files/custom.css"
+        type="text/css" media="all">
+  <style id="theme-dynamic-styles-inline-css" type="text/css">
+    body {
+      background-color: #fff;
+    }
+
+    .mk-header {
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+    }
+
+    .mk-header-bg {
+      background-color: #ffffff;
+    }
+
+    .mk-classic-nav-bg {
+      background-color: #ffffff;
+    }
+
+    .master-holder-bg {
+    }
+
+    #mk-footer {
+      background-color: #ffffff;
+    }
+
+    #mk-boxed-layout {
+      -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+      -moz-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    }
+
+    .mk-news-tab .mk-tabs-tabs .is-active a, .mk-fancy-title.pattern-style span, .mk-fancy-title.pattern-style.color-gradient span:after, .page-bg-color {
+      background-color:;
+    }
+
+    .page-title {
+      font-size: 20px;
+      color: #4d4d4d;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    .page-subtitle {
+      font-size: 14px;
+      line-height: 100%;
+      color: #a3a3a3;
+      font-size: 14px;
+      text-transform: none;
+    }
+
+    .header-style-1 .mk-header-padding-wrapper, .header-style-2 .mk-header-padding-wrapper, .header-style-3 .mk-header-padding-wrapper {
+      padding-top: 91px;
+    }
+
+    @font-face {
+      font-family: 'star';
+      src: url('http://demos.artbees.net/jupiter5/tempestas/wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.eot');
+      src: url('http://demos.artbees.net/jupiter5/tempestas/wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.eot?#iefix') format('embedded-opentype'), url('http://demos.artbees.net/jupiter5/tempestas/wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.woff') format('woff'), url('http://demos.artbees.net/jupiter5/tempestas/wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.ttf') format('truetype'), url('http://demos.artbees.net/jupiter5/tempestas/wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.svg#star') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'WooCommerce';
+      src: url('http://demos.artbees.net/jupiter5/tempestas/wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.eot');
+      src: url('http://demos.artbees.net/jupiter5/tempestas/wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.eot?#iefix') format('embedded-opentype'), url('http://demos.artbees.net/jupiter5/tempestas/wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.woff') format('woff'), url('http://demos.artbees.net/jupiter5/tempestas/wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.ttf') format('truetype'), url('http://demos.artbees.net/jupiter5/tempestas/wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.svg#WooCommerce') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    #fancy-title-3 {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 69px;
+      color: #454ef4;
+      text-align: left;
+      font-style: inherit;
+      font-weight: 400;
+      padding-top: 0px;
+      padding-bottom: 15px;
+    }
+
+    #fancy-title-3 span {
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-3 {
+        text-align: center !important;
+      }
+    }
+
+    @media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {
+      #fancy-title-3 {
+        font-size: 50px;
+      }
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-3 {
+        font-size: 40px;
+      }
+    }
+
+    #list-4 {
+      margin-bottom: 30px
+    }
+
+    #list-4 ul li .mk-svg-icon {
+      fill: #454ef4
+    }
+
+    #mk-button-5 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 20px;
+    }
+
+    #mk-button-5 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-5 .mk-button {
+      background-color: #454ef4;
+    }
+
+    #mk-button-5 .mk-button:hover {
+      background-color: #43d2e8;
+    }
+
+    #mk-button-5 .mk-button:hover .mk-svg-icon {
+    }
+
+    #mk-button-6 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+
+    #mk-button-6 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-6 .mk-button {
+      border-color: #454ef4;
+      color: #454ef4 !important;
+    }
+
+    #mk-button-6 .mk-button .mk-svg-icon {
+      fill: #454ef4 !important;
+    }
+
+    #mk-button-6 .mk-button:hover {
+      background-color: #454ef4;
+      color: #ffffff !important;
+    }
+
+    #mk-button-6 .mk-button:hover .mk-svg-icon {
+      fill: #ffffff !important;
+    }
+
+    #padding-7 {
+      height: 80px;
+    }
+
+    .full-width-2 {
+      min-height: 100px;
+      margin-bottom: 0px;
+    }
+
+    .full-width-2 .page-section-content {
+      padding: 80px 0 60px;
+    }
+
+    #background-layer--2 {;
+      background-position: left top;
+      background-repeat: repeat;;
+    }
+
+    #background-layer--2 .mk-color-layer {;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    #mk-icon-box-10 .mk-box-icon-2-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: #43d2e8;
+      padding: 20px 0 10px 0;
+    }
+
+    #mk-icon-box-10 .mk-box-icon-2-content {
+      color: #ffffff;
+    }
+
+    #mk-button-11 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+
+    #mk-button-11 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-11 .mk-button {
+      border-color: #43d2e8;
+      color: #43d2e8 !important;
+    }
+
+    #mk-button-11 .mk-button .mk-svg-icon {
+      fill: #43d2e8 !important;
+    }
+
+    #mk-button-11 .mk-button:hover {
+      background-color: #43d2e8;
+      color: #ffffff !important;
+    }
+
+    #mk-button-11 .mk-button:hover .mk-svg-icon {
+      fill: #ffffff !important;
+    }
+
+    #padding-12 {
+      height: 60px;
+    }
+
+    #mk-icon-box-13 .mk-box-icon-2-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: #43d2e8;
+      padding: 20px 0 10px 0;
+    }
+
+    #mk-icon-box-13 .mk-box-icon-2-content {
+      color: #ffffff;
+    }
+
+    #mk-button-14 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+
+    #mk-button-14 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-14 .mk-button {
+      border-color: #43d2e8;
+      color: #43d2e8 !important;
+    }
+
+    #mk-button-14 .mk-button .mk-svg-icon {
+      fill: #43d2e8 !important;
+    }
+
+    #mk-button-14 .mk-button:hover {
+      background-color: #43d2e8;
+      color: #ffffff !important;
+    }
+
+    #mk-button-14 .mk-button:hover .mk-svg-icon {
+      fill: #ffffff !important;
+    }
+
+    #padding-15 {
+      height: 60px;
+    }
+
+    #mk-icon-box-16 .mk-box-icon-2-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: #43d2e8;
+      padding: 20px 0 10px 0;
+    }
+
+    #mk-icon-box-16 .mk-box-icon-2-content {
+      color: #ffffff;
+    }
+
+    #mk-button-17 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+
+    #mk-button-17 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-17 .mk-button {
+      border-color: #43d2e8;
+      color: #43d2e8 !important;
+    }
+
+    #mk-button-17 .mk-button .mk-svg-icon {
+      fill: #43d2e8 !important;
+    }
+
+    #mk-button-17 .mk-button:hover {
+      background-color: #43d2e8;
+      color: #ffffff !important;
+    }
+
+    #mk-button-17 .mk-button:hover .mk-svg-icon {
+      fill: #ffffff !important;
+    }
+
+    #padding-18 {
+      height: 60px;
+    }
+
+    #mk-icon-box-19 .mk-box-icon-2-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: #43d2e8;
+      padding: 20px 0 10px 0;
+    }
+
+    #mk-icon-box-19 .mk-box-icon-2-content {
+      color: #ffffff;
+    }
+
+    #mk-button-20 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+
+    #mk-button-20 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-20 .mk-button {
+      border-color: #43d2e8;
+      color: #43d2e8 !important;
+    }
+
+    #mk-button-20 .mk-button .mk-svg-icon {
+      fill: #43d2e8 !important;
+    }
+
+    #mk-button-20 .mk-button:hover {
+      background-color: #43d2e8;
+      color: #ffffff !important;
+    }
+
+    #mk-button-20 .mk-button:hover .mk-svg-icon {
+      fill: #ffffff !important;
+    }
+
+    .full-width-9 {
+      min-height: 100px;
+      margin-bottom: 0px;
+      background-color: #454ef4;
+    }
+
+    .full-width-9 .page-section-content {
+      padding: 140px 0 120px;
+    }
+
+    #background-layer--9 {;
+      background-position: left top;
+      background-repeat: repeat;;
+    }
+
+    #background-layer--9 .mk-color-layer {;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .full-width-9 .mk-fancy-title.pattern-style span, .full-width-9 .mk-blog-view-all {
+      background-color: #454ef4 !important;
+    }
+
+    #padding-21 {
+      height: 120px;
+    }
+
+    #fancy-title-22 {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 48px;
+      line-height: 95%;
+      color: #454ef4;
+      text-align: center;
+      font-style: inherit;
+      font-weight: 400;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    #fancy-title-22 span {
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-22 {
+        text-align: center !important;
+      }
+    }
+
+    @media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {
+      #fancy-title-22 {
+        font-size: 30px;
+      }
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-22 {
+        font-size: 15px;
+      }
+    }
+
+    #fancy-title-23 {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 68px;
+      line-height: 98%;
+      color: #43d2e8;
+      text-align: center;
+      font-style: inherit;
+      font-weight: 400;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    #fancy-title-23 span {
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-23 {
+        text-align: center !important;
+      }
+    }
+
+    @media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {
+      #fancy-title-23 {
+        font-size: 50px;
+      }
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-23 {
+        font-size: 35px;
+      }
+    }
+
+    #text-block-24 {
+      margin-bottom: 100px;
+      text-align: center;
+    }
+
+    #padding-25 {
+      height: 60px;
+    }
+
+    #mk-button-26 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+
+    #mk-button-26 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-26 .mk-button {
+      background-color: #454ef4;
+    }
+
+    #mk-button-26 .mk-button:hover {
+      background-color: #43d2e8;
+    }
+
+    #mk-button-26 .mk-button:hover .mk-svg-icon {
+    }
+
+    #padding-27 {
+      height: 120px;
+    }
+
+    #fancy-title-29 {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 48px;
+      color: #ffffff;
+      text-align: left;
+      font-style: inherit;
+      font-weight: 400;
+      padding-top: 0px;
+      padding-bottom: 15px;
+    }
+
+    #fancy-title-29 span {
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-29 {
+        text-align: center !important;
+      }
+    }
+
+    @media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {
+      #fancy-title-29 {
+        font-size: 40px;
+      }
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-29 {
+        font-size: 30px;
+      }
+    }
+
+    #text-block-30 {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    #mk-button-31 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+
+    #mk-button-31 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-31 .mk-button {
+      background-color: #fcb040;
+    }
+
+    #mk-button-31 .mk-button:hover {
+      background-color: #43d2e8;
+    }
+
+    #mk-button-31 .mk-button:hover .mk-svg-icon {
+    }
+
+    #padding-32 {
+      height: 40px;
+    }
+
+    .full-width-28 {
+      min-height: 100px;
+      margin-bottom: 0px;
+      background-color: #39af6a;
+    }
+
+    .full-width-28 .page-section-content {
+      padding: 140px 0 0px;
+    }
+
+    #background-layer--28 {;
+      background-position: left top;
+      background-repeat: repeat;;
+    }
+
+    #background-layer--28 .mk-color-layer {;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .full-width-28 .mk-fancy-title.pattern-style span, .full-width-28 .mk-blog-view-all {
+      background-color: #39af6a !important;
+    }
+
+    #padding-34 {
+      height: 120px;
+    }
+
+    #fancy-title-35 {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 48px;
+      line-height: 95%;
+      color: #454ef4;
+      text-align: center;
+      font-style: inherit;
+      font-weight: 400;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    #fancy-title-35 span {
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-35 {
+        text-align: center !important;
+      }
+    }
+
+    @media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {
+      #fancy-title-35 {
+        font-size: 30px;
+      }
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-35 {
+        font-size: 15px;
+      }
+    }
+
+    #fancy-title-36 {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 68px;
+      line-height: 98%;
+      color: #43d2e8;
+      text-align: center;
+      font-style: inherit;
+      font-weight: 400;
+      padding-top: 0px;
+      padding-bottom: 80px;
+    }
+
+    #fancy-title-36 span {
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-36 {
+        text-align: center !important;
+      }
+    }
+
+    @media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {
+      #fancy-title-36 {
+        font-size: 50px;
+      }
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-36 {
+        font-size: 35px;
+      }
+    }
+
+    #padding-37 {
+      height: 80px;
+    }
+
+    #mk-icon-box-38 .mk-box-icon-2-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: #43d2e8;
+      padding: 10px 0 10px 0;
+    }
+
+    #mk-icon-box-38 .mk-box-icon-2-content {
+      color: #666666;
+    }
+
+    #padding-39 {
+      height: 20px;
+    }
+
+    #mk-icon-box-40 .mk-box-icon-2-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: #43d2e8;
+      padding: 10px 0 10px 0;
+    }
+
+    #mk-icon-box-40 .mk-box-icon-2-content {
+      color: #666666;
+    }
+
+    #padding-41 {
+      height: 20px;
+    }
+
+    #mk-icon-box-42 .mk-box-icon-2-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: #43d2e8;
+      padding: 10px 0 10px 0;
+    }
+
+    #mk-icon-box-42 .mk-box-icon-2-content {
+      color: #666666;
+    }
+
+    #padding-43 {
+      height: 100px;
+    }
+
+    #mk-button-44 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 20px;
+    }
+
+    #mk-button-44 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-44 .mk-button {
+      background-color: #454ef4;
+    }
+
+    #mk-button-44 .mk-button:hover {
+      background-color: #43d2e8;
+    }
+
+    #mk-button-44 .mk-button:hover .mk-svg-icon {
+    }
+
+    #mk-button-45 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+
+    #mk-button-45 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-45 .mk-button {
+      border-color: #454ef4;
+      color: #454ef4 !important;
+    }
+
+    #mk-button-45 .mk-button .mk-svg-icon {
+      fill: #454ef4 !important;
+    }
+
+    #mk-button-45 .mk-button:hover {
+      background-color: #454ef4;
+      color: #ffffff !important;
+    }
+
+    #mk-button-45 .mk-button:hover .mk-svg-icon {
+      fill: #ffffff !important;
+    }
+
+    #padding-46 {
+      height: 80px;
+    }
+
+    #mk-icon-box-47 .mk-box-icon-2-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: #43d2e8;
+      padding: 10px 0 10px 0;
+    }
+
+    #mk-icon-box-47 .mk-box-icon-2-content {
+      color: #666666;
+    }
+
+    #padding-48 {
+      height: 20px;
+    }
+
+    #mk-icon-box-49 .mk-box-icon-2-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: #43d2e8;
+      padding: 10px 0 10px 0;
+    }
+
+    #mk-icon-box-49 .mk-box-icon-2-content {
+      color: #666666;
+    }
+
+    #padding-50 {
+      height: 20px;
+    }
+
+    #mk-icon-box-51 .mk-box-icon-2-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: #43d2e8;
+      padding: 10px 0 10px 0;
+    }
+
+    #mk-icon-box-51 .mk-box-icon-2-content {
+      color: #666666;
+    }
+
+    #padding-52 {
+      height: 120px;
+    }
+
+    #mk-button-54 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 15px;
+    }
+
+    #mk-button-54 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-54 .mk-button {
+      background-color: #b9c550;
+    }
+
+    #mk-button-54 .mk-button:hover {
+      background-color: #acb74a;
+    }
+
+    #mk-button-54 .mk-button:hover .mk-svg-icon {
+    }
+
+    #mk-button-55 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 15px;
+    }
+
+    #mk-button-55 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-55 .mk-button {
+      background-color: #b9c550;
+    }
+
+    #mk-button-55 .mk-button:hover {
+      background-color: #acb74a;
+    }
+
+    #mk-button-55 .mk-button:hover .mk-svg-icon {
+    }
+
+    #mk-button-56 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-right: 15px;
+    }
+
+    #mk-button-56 .mk-button {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    #mk-button-56 .mk-button {
+      background-color: #b9c550;
+    }
+
+    #mk-button-56 .mk-button:hover {
+      background-color: #acb74a;
+    }
+
+    #mk-button-56 .mk-button:hover .mk-svg-icon {
+    }
+
+    #mk-pricing-table-53.new-style .pricing-cols .pricing-features ul li {
+      font-size: 14px;
+    }
+
+    #padding-57 {
+      height: 120px;
+    }
+
+    #fancy-title-59 {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 48px;
+      color: #ffffff;
+      text-align: center;
+      font-style: inherit;
+      font-weight: 400;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    #fancy-title-59 span {
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-59 {
+        text-align: center !important;
+      }
+    }
+
+    @media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {
+      #fancy-title-59 {
+        font-size: 40px;
+      }
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-59 {
+        font-size: 20px;
+      }
+    }
+
+    #padding-60 {
+      height: 40px;
+    }
+
+    #testimonial_61 .mk-testimonial-quote, #testimonial_61 .mk-testimonial-quote p {
+      color: #777777;
+    }
+
+    #testimonial_61 .mk-testimonial-quote {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: bold;
+      letter-spacing: 0px;
+      text-transform: initial;
+    }
+
+    #testimonial_61 .mk-testimonial-quote * {
+      font-style: italic !important;
+      font-weight: bold !important;
+    }
+
+    #testimonial_61 .mk-testimonial-author {
+      color: #444444;
+    }
+
+    #testimonial_61 .mk-testimonial-company {
+      color: #777777;
+    }
+
+    .full-width-58 {
+      min-height: 100px;
+      margin-bottom: 0px;
+      background-color: #454ef4;
+    }
+
+    .full-width-58 .page-section-content {
+      padding: 100px 0 100px;
+    }
+
+    #background-layer--58 {;
+      background-position: left top;
+      background-repeat: repeat;;
+    }
+
+    #background-layer--58 .mk-color-layer {;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .full-width-58 .mk-fancy-title.pattern-style span, .full-width-58 .mk-blog-view-all {
+      background-color: #454ef4 !important;
+    }
+
+    #fancy-title-63 {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 36px;
+      color: #ffffff;
+      text-align: left;
+      font-style: inherit;
+      font-weight: 400;
+      padding-top: 60px;
+      padding-bottom: 0px;
+    }
+
+    #fancy-title-63 span {
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-63 {
+        text-align: center !important;
+      }
+    }
+
+    @media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {
+      #fancy-title-63 {
+        font-size: 18px;
+      }
+    }
+
+    @media handheld, only screen and (max-width: 767px) {
+      #fancy-title-63 {
+        font-size: 30px;
+      }
+    }
+
+    #clients-64 {
+      margin-bottom: 0px;
+    }
+
+    #clients-64 .client-logo {
+      border-color: transparent;;
+      border-width: 1px;
+      border-style: solid;
+      margin: 0 autopx;
+    }
+
+    #clients-64 .client-logo:hover {
+    }
+
+    .full-width-62 {
+      min-height: 100px;
+      margin-bottom: 0px;
+      background-color: #4e57f5;
+    }
+
+    .full-width-62 .page-section-content {
+      padding: 60px 0 80px;
+    }
+
+    #background-layer--62 {;
+      background-position: left top;
+      background-repeat: repeat;;
+    }
+
+    #background-layer--62 .mk-color-layer {;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .full-width-62 .mk-fancy-title.pattern-style span, .full-width-62 .mk-blog-view-all {
+      background-color: #4e57f5 !important;
+    }
+
+    .mk-tweet-list.light li:before {
+      color: #454ef4 !important;
+      -webkit-background-clip: padding-box;
+      -webkit-text-fill-color: initial;
+      background: transparent;
+    }
+
+    #mk-footer img {
+      margin-left: -8% !important;
+    }
+  </style>
+  <script type="text/javascript"
+          src="./Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress theme_files/jquery.js"></script>
+  <script type="text/javascript"
+          src="./Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress theme_files/jquery-migrate.min.js"></script>
+  <link rel="https://api.w.org/" href="http://demos.artbees.net/jupiter5/tempestas/wp-json/">
+  <link rel="EditURI" type="application/rsd+xml" title="RSD"
+        href="http://demos.artbees.net/jupiter5/tempestas/xmlrpc.php?rsd">
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+        href="http://demos.artbees.net/jupiter5/tempestas/wp-includes/wlwmanifest.xml">
+  <meta name="generator" content="WordPress 4.7.5">
+  <link rel="canonical" href="http://demos.artbees.net/jupiter5/tempestas/">
+  <link rel="shortlink" href="http://demos.artbees.net/jupiter5/tempestas/">
+  <link rel="alternate" type="application/json+oembed"
+        href="http://demos.artbees.net/jupiter5/tempestas/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemos.artbees.net%2Fjupiter5%2Ftempestas%2F">
+  <link rel="alternate" type="text/xml+oembed"
+        href="http://demos.artbees.net/jupiter5/tempestas/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemos.artbees.net%2Fjupiter5%2Ftempestas%2F&amp;format=xml">
+  <script> var isTest = false; </script>
+  <style id="js-media-query-css">.mk-event-countdown-ul:media( max-width: 750px ) li {
+    width: 90%;
+    display: block;
+    margin: 0 auto 15px
+  }
+
+  .mk-process-steps:media( max-width: 960px ) ul:before {
+    display: none !important
+  }
+
+  .mk-process-steps:media( max-width: 960px ) li {
+    margin-bottom: 30px !important;
+    width: 100% !important;
+    text-align: center
+  }
+
+  .mk-event-countdown-ul.query_max-width_750px li {
+    width: 90%;
+    display: block;
+    margin: 0 auto 15px
+  }
+
+  .mk-process-steps.query_max-width_960px ul:before {
+    display: none !important
+  }
+
+  .mk-process-steps.query_max-width_960px li {
+    margin-bottom: 30px !important;
+    width: 100% !important;
+    text-align: center
+  }</style>
+  <meta itemprop="author" content="">
+  <meta itemprop="datePublished" content="April 12, 2016">
+  <meta itemprop="dateModified" content="April 18, 2016">
+  <meta itemprop="publisher" content="Tempestas Template - Jupiter WordPress Theme">
+  <style type="text/css">.recentcomments a {
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }</style>
+  <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" type="text/css"
+        href="http://demos.artbees.net/jupiter5/tempestas/wp-content/plugins/js_composer_theme/assets/css/vc_lte_ie9.min.css"
+        media="screen"><![endif]-->
+  <meta name="generator" content="Jupiter 5.9.1">
+  <noscript>&lt;style type="text/css"&gt; .wpb_animate_when_almost_visible { opacity: 1; }&lt;/style&gt;</noscript>
+  <style type="text/css">@keyframes resizeanim {
+                           from {
+                             opacity: 0;
+                           }
+                           to {
+                             opacity: 0;
+                           }
+                         }
+
+  .resize-triggers {
+    animation: 1ms resizeanim;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .resize-triggers, .resize-triggers > div, .contract-trigger:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .resize-triggers > div {
+    background: #eee;
+    overflow: auto;
+  }
+
+  .contract-trigger:before {
+    width: 200%;
+    height: 200%;
+  }</style>
+  <style type="text/css">.fancybox-margin {
+    margin-right: 0px;
+  }</style>
 </head>
-<body style="padding-top: 70px;">
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Sensors.fun</a>
+
+<body class="home page-template-default page page-id-5 wpb-js-composer js-comp-ver-5.1.1 vc_responsive"
+      itemscope="itemscope" itemtype="https://schema.org/WebPage" data-adminbar="">
+
+<div class="mk-body-loader-overlay page-preloader" style="background-color: rgb(255, 255, 255); display: none;"><img
+        alt="Tempestas Template - Jupiter WordPress Theme" class="preloader-logo"
+        src="./Tempestas Template – Jupiter WordPress Theme – Another amazing template created by Jupiter WordPress theme_files/logo.png"
+        width="222" height="58">
+  <div class="preloader-preview-area">
+    <div class="ball-pulse">
+      <div style="background-color: #43d2e8"></div>
+      <div style="background-color: #43d2e8"></div>
+      <div style="background-color: #43d2e8"></div>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
   </div>
-  <!-- /.container -->
-</nav>
-
-<!-- Page Content -->
-<div class="container">
-
-  <div class="row">
-
-    <div class="col-md-3">
-      <p class="lead">Sensors.fun</p>
-      <div class="list-group">
-        <a href="/" class="list-group-item active">New TTN Device</a>
-        <a href="/toon" class="list-group-item">New Toon Device</a>
-        <a href="/users" class="list-group-item">My Devices</a>
-      </div>
-    </div>
-    {{{ body }}}
-
-  </div>
-
 </div>
-<!-- /.container -->
+<!-- Target for scroll anchors to achieve native browser bahaviour + possible enhancements like smooth scrolling -->
+<div id="top-of-page"></div>
 
-<hr>
+<div id="mk-boxed-layout">
 
-<!-- Footer -->
-<footer>
-  <div class="row">
-    <div class="col-lg-12">
-      <p>Copyright &copy; Sensors.fun 2017</p>
-    </div>
-  </div>
-</footer>
-</body>
-</html>
+  <div id="mk-theme-container">
+
+
+    <header data-height="90" data-sticky-height="55" data-responsive-height="90" data-transparent-skin=""
+            data-header-style="1" data-sticky-style="slide" data-sticky-offset="80%" id="mk-header-1"
+            class="mk-header header-style-1 header-align-left  toolbar-false menu-hover-4 sticky-style-slide mk-background-stretch boxed-header"
+            role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+      <div class="mk-header-holder">
+        <div class="mk-header-inner add-header-height">
+
+          <div class="mk-header-bg "></div>
+
+
+          <div class="mk-grid header-grid">
+
+            <div class="mk-header-nav-container one-row-style menu-hover-style-4" role="navigation"
+                 itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+              <nav class="mk-main-navigation js-main-nav">
+                <ul id="menu-main-menu" class="main-navigation-ul dropdownJavascript">
+                  <li id="responsive-menu-item-19"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item">
+                    <a class="menu-item-link js-smooth-scroll" href="/">Home</a>
+                  </li>
+                  <li id="responsive-menu-item-116" class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                          class="menu-item-link js-smooth-scroll"
+                          href="/sensors">Sensors</a></li>
+
+                  <li id="responsive-menu-item-118" class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                          class="menu-item-link js-smooth-scroll"
+                          href="/data">Browse data</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="mk-nav-responsive-link">
+              <div class="mk-css-icon-menu">
+                <div class="mk-css-icon-menu-line-1"></div>
+                <div class="mk-css-icon-menu-line-2"></div>
+                <div class="mk-css-icon-menu-line-3"></div>
+              </div>
+            </div>
+            <div class=" header-logo fit-logo-img add-header-height  logo-has-sticky">
+
+              <a href="http://demos.artbees.net/jupiter5/tempestas/"
+                 title="Tempestas Template – Jupiter WordPress Theme">
+
+                <img class="mk-desktop-logo dark-logo"
+                     title="Another amazing template created by Jupiter WordPress theme"
+                     alt="Another amazing template created by Jupiter WordPress theme"
+                     src="./images/sensors.logo.png">
+
+
+                <img class="mk-sticky-logo" title="Another amazing template created by Jupiter WordPress theme"
+                     alt="Another amazing template created by Jupiter WordPress theme"
+                     src="./images/sensors.logo.png">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="mk-header-right">
+          </div>
+
+        </div>
+
+        <div class="mk-responsive-wrap" style="max-height: 665px;">
+
+          <nav class="menu-main-menu-container">
+            <ul id="menu-main-menu-1" class="mk-responsive-nav">
+              <li id="responsive-menu-item-19"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item">
+                <a class="menu-item-link js-smooth-scroll" href="/">Home</a>
+              </li>
+              <li id="responsive-menu-item-116" class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                      class="menu-item-link js-smooth-scroll"
+                      href="/sensors">Sensors</a></li>
+
+              <li id="responsive-menu-item-118" class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                      class="menu-item-link js-smooth-scroll"
+                      href="/data">Browse data</a></li>
+
+            </ul>
+          </nav>
+
+
+        </div>
+
+      </div>
+
+      <div class="mk-header-padding-wrapper"></div>
+
+    </header>
+
+    {{{ body }}}

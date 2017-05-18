@@ -4,5 +4,29 @@
 
 
 .superTTN {
-  padding: 10px 28px;
+  padding: 9px 28px !important;
+  margin-top: 1px;
+  float: left;
+  margin-right: 10px;
+}
+
+
+.main-search {
+  width: 80%;
+  padding: 10px 20px;
+  float:left;
+  height: 60px;
+}
+
+
+.main-search-submit {
+  float:left;
+  margin-left: 10px;
+  height: 60px;
+  width: 100px;
+}
+
+.search-form {
+  display: block;
+  margin: 0 auto;
 }
