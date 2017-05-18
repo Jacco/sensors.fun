@@ -1,32 +1,53 @@
 .helloInput {
-  width: 200px;
+    width: 200px;
 }
-
 
 .superTTN {
-  padding: 9px 28px !important;
-  margin-top: 1px;
-  float: left;
-  margin-right: 10px;
+    padding: 9px 28px !important;
+    margin-top: 1px;
+    float: left;
+    margin-right: 10px;
 }
-
 
 .main-search {
-  width: 80%;
-  padding: 10px 20px;
-  float:left;
-  height: 60px;
+    width: 80%;
+    padding: 10px 20px;
+    float: left;
+    height: 60px;
 }
 
-
 .main-search-submit {
-  float:left;
-  margin-left: 10px;
-  height: 60px;
-  width: 100px;
+    float: left;
+    margin-left: 10px;
+    height: 60px;
+    width: 100px;
 }
 
 .search-form {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.topSpacing {
+    margin-top: 20px !important;
+}
+
+.api-label {
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.api-copy {
+    margin-left: 10px;
+    height: 37px;
+}
+
+.sensor-api {
+    padding: 10px;
+    width: 100%;
+    float: left;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
