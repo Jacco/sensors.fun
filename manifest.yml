@@ -1,5 +1,5 @@
 ---
 applications:
  - name: sensorsfun
-   random-route: true
+   random-route: false
    memory: 256M
