@@ -1,67 +1,49 @@
-<div class="col-md-9">
+<div class="container topSpacing" style="margin-top: 90px !important;">
+  <div class="col-md-3">
+    <div class="info-wrap" style="padding: 10px;font-size: 18px;">
+      <img src="https://ttnstaticfile.blob.core.windows.net/static/ttn/media/logo/ttn-logo.png" style="margin-bottom:30px; width: 80%;">
+      <br>
+      Provide the following:
+      <br>
+      <ul style="margin-top: 20px; margin-bottom: 30px;">
+        <li>Region</li>
+        <li>App ID</li>
+        <li>Access token</li>
+      </ul>
 
-  <div class="bs-example" data-example-id="basic-forms">
-    <h3>Add new The Things Network device</h3>
-    <form method="post" action="http://datashare.eu-gb.mybluemix.net/newsource">
-
-      <div class="form-group">
-        <label for="region">Region</label>
-        <input type="text" class="form-control" id="region" name="region" value="eu">
-
-      </div>
-
-      <div class="form-group">
-        <label for="appID">Access token</label>
-        <input type="text" class="form-control" id="appID" name="appid" value="tnw-smart">
-
-      </div>
-
-      <div class="form-group">
-        <label for="accessToken">Access token</label>
-        <input type="text" class="form-control" id="accessToken" name="region"
-               value="ttn-account-v2.wBANZIGQtnLYHwoPdyJOM9xVHrlJr4mliGRaHp89PXU">
-
-      </div>
-
-      <button type="submit" class="btn btn-default">Submit</button>
-
-    </form>
+      * You can find all of this info @ <a href="https://console.thethingsnetwork.org/">console.thethingsnetwork.org/</a>
+    </div>
   </div>
+  <div class="col-md-9">
+
+    <div class="bs-example" data-example-id="basic-forms">
+      <h3>Add new The Things Network device</h3>
+      <form method="post" action="http://datashare.eu-gb.mybluemix.net/newsource">
+
+        <div class="form-group">
+          <label for="region">Region</label>
+          <input type="text" class="form-control" id="region" name="region" value="eu">
+
+        </div>
+
+        <div class="form-group">
+          <label for="appID">App ID</label>
+          <input type="text" class="form-control" id="appID" name="appid" value="tnw-smart">
+
+        </div>
+
+        <div class="form-group">
+          <label for="accessToken">Access token</label>
+          <input type="text" class="form-control" id="accessToken" name="region"
+                 value="ttn-account-v2.wBANZIGQtnLYHwoPdyJOM9xVHrlJr4mliGRaHp89PXU">
+
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+
+      </form>
+    </div>
+  </div>
+
 </div>
-<div id="databaseNames">
-</div>
 
-<script>
-/*$('#user_name').keydown(function(e) {
-        	var name = $('#user_name').val();
-            if (e.which == 13 && name.length > 0) { //catch Enter key
-            	//POST request to API to create a new visitor entry in the database
-                $.ajax({
-				  method: "POST",
-				  url: "./api/visitors",
-				  contentType: "application/json",
-				  data: JSON.stringify({name: name })
-				})
-                .done(function(data) {
-                    $('#response').html(data);
-                    $('#nameInput').hide();
-                    getNames();
-                });
-            }
-        });*/
-
-        //Retreive all the visitors from the database
-        function getNames(){
-          $.get("./api/visitors")
-              .done(function(data) {
-                  if(data.length > 0) {
-                    $('#databaseNames').html("Database contents: " + JSON.stringify(data));
-                  }
-              });
-          }
-
-          //Call getNames on page load.
-         $(document).ready(function() {
-          	getNames();
-      	});
-</script>
